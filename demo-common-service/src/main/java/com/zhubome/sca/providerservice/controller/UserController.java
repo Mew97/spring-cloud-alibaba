@@ -34,7 +34,7 @@ public class UserController {
 
     @GetMapping
     public String getPort() throws InterruptedException {
-        TimeUnit.MILLISECONDS.sleep(200);
+//        TimeUnit.MILLISECONDS.sleep(200); //模拟数据处理时间
         return "被调用的服务端口：" + this.port;
     }
 

@@ -20,7 +20,7 @@ spring:
       discovery:
         server-addr: jd:8848
 server:
-  port: 10105
+  port: 10104
 #mybatis-plus:
 #  mapper-locations: classpath:mapper/**/*.xml
 #  type-aliases-package: com.zhubome.sca.providerservice.entity

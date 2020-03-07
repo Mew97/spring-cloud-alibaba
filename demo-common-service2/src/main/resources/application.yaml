@@ -12,5 +12,14 @@ feign:
   client:
     config:
       default:  #服务名，填写default为所有服务
-        connectTimeout: 3000
+        connectTimeout: 3000  # 增加等待延时
         readTimeout: 12000
+
+# 配置负载均衡，默通过ribbon实现，默认是轮询模式
+sca-provider-service: # 单个服务写上服务名
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+# 多个服务不写服务名，但尝试未生效
+#ribbon:
+#  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
