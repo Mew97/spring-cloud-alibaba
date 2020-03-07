@@ -1,11 +1,12 @@
 package com.zhubome.democommonservice.controller;
 
 
-import com.zhubome.democommonservice.entity.User;
-import com.zhubome.democommonservice.service.IUserService;
+import com.zhubome.democommonmybatis.entity.User;
+import com.zhubome.democommonmybatis.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,11 +18,10 @@ import java.util.List;
  * @since 2020-03-05
  */
 @RestController
-//@RequestMapping("/democommonservice/user")
 public class UserController {
 
     @Autowired
-    public IUserService iUserService;
+    private IUserService iUserService;
 
     @GetMapping("/get")
     public List<User> getUser(){

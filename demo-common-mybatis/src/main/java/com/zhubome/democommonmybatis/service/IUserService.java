@@ -1,6 +1,6 @@
-package com.zhubome.democommonservice.service;
+package com.zhubome.democommonmybatis.service;
 
-import com.zhubome.democommonservice.entity.User;
+import com.zhubome.democommonmybatis.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -8,8 +8,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  *  服务类
  * </p>
  *
- * @author jobob
- * @since 2020-03-05
+ * @author mew
+ * @since 2020-03-06
  */
 public interface IUserService extends IService<User> {
 
