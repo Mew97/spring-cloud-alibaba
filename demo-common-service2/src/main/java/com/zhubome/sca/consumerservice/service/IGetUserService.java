@@ -1,12 +1,12 @@
-package com.zhubome.democommonservice2.service;
+package com.zhubome.sca.consumerservice.service;
 
-import com.zhubome.democommonmybatis.entity.User;
+import com.zhubome.sca.mybatis.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@FeignClient("demo-common-service")
+@FeignClient("sca-provider-service")
 public interface IGetUserService {
     @GetMapping("/get")
     List<User> feignGet();

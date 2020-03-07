@@ -1,4 +1,4 @@
-package com.zhubome.democommonservice;
+package com.zhubome.sca.providerservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

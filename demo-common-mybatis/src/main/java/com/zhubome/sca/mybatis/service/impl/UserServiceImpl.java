@@ -1,8 +1,8 @@
-package com.zhubome.democommonmybatis.service.impl;
+package com.zhubome.sca.mybatis.service.impl;
 
-import com.zhubome.democommonmybatis.entity.User;
-import com.zhubome.democommonmybatis.mapper.UserMapper;
-import com.zhubome.democommonmybatis.service.IUserService;
+import com.zhubome.sca.mybatis.entity.User;
+import com.zhubome.sca.mybatis.mapper.UserMapper;
+import com.zhubome.sca.mybatis.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.zhubome.democommonmybatis.service;
+package com.zhubome.sca.mybatis.service;
 
-import com.zhubome.democommonmybatis.entity.User;
+import com.zhubome.sca.mybatis.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

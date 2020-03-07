@@ -1,8 +1,8 @@
-package com.zhubome.democommonservice2.controller;
+package com.zhubome.sca.consumerservice.controller;
 
 
-import com.zhubome.democommonmybatis.entity.User;
-import com.zhubome.democommonservice2.service.IGetUserService;
+import com.zhubome.sca.mybatis.entity.User;
+import com.zhubome.sca.consumerservice.service.IGetUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.zhubome.democommonservice2;
+package com.zhubome.sca.consumerservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class DemoCommonService2Application {
+public class ScaConsumerServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DemoCommonService2Application.class, args);
+        SpringApplication.run(ScaConsumerServiceApplication.class, args);
     }
 }

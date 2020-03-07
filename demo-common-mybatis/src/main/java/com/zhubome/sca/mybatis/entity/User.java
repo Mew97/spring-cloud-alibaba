@@ -1,4 +1,4 @@
-package com.zhubome.democommonmybatis.entity;
+package com.zhubome.sca.mybatis.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

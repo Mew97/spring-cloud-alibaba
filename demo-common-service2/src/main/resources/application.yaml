@@ -1,6 +1,6 @@
 spring:
   application:
-    name: demo-common-service2
+    name: sca-consumer-service
   cloud:
     nacos:
       discovery:

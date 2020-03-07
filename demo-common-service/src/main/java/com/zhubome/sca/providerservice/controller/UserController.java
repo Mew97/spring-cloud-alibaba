@@ -1,12 +1,11 @@
-package com.zhubome.democommonservice.controller;
+package com.zhubome.sca.providerservice.controller;
 
 
-import com.zhubome.democommonmybatis.entity.User;
-import com.zhubome.democommonmybatis.service.IUserService;
+import com.zhubome.sca.mybatis.entity.User;
+import com.zhubome.sca.mybatis.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

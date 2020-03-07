@@ -1,6 +1,6 @@
 spring:
   application:
-    name: demo-common-service
+    name: sca-provider-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
@@ -23,4 +23,4 @@ server:
   port: 10105
 #mybatis-plus:
 #  mapper-locations: classpath:mapper/**/*.xml
-#  type-aliases-package: com.zhubome.democommonservice.entity
+#  type-aliases-package: com.zhubome.sca.providerservice.entity

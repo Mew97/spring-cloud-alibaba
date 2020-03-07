@@ -1,8 +1,7 @@
-package com.zhubome.democommonmybatis.mapper;
+package com.zhubome.sca.mybatis.mapper;
 
-import com.zhubome.democommonmybatis.entity.User;
+import com.zhubome.sca.mybatis.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
