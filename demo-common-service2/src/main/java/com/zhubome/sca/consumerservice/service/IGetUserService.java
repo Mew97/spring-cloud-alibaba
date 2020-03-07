@@ -10,4 +10,8 @@ import java.util.List;
 public interface IGetUserService {
     @GetMapping("/get")
     List<User> feignGet();
+
+    // 负载均衡测试
+    @GetMapping
+    String feignGet2();
 }

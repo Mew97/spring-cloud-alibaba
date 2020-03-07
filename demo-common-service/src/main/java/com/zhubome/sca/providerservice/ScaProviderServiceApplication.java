@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication(scanBasePackages = {"com.zhubome.sca"})
+@SpringBootApplication(scanBasePackages = {"com.zhubome.sca"}) // 扫描所有项目bean
 @EnableDiscoveryClient
 @MapperScan("com.zhubome.sca.mybatis.mapper")
 public class ScaProviderServiceApplication {

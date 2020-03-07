@@ -18,4 +18,9 @@ public class UserController {
     public List<User> getUser(){
         return iGetUserService.feignGet();
     }
+
+    @GetMapping("/port")
+    public String getPort(){
+        return iGetUserService.feignGet2();
+    }
 }
