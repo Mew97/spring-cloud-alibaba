@@ -101,7 +101,7 @@ sca-provider-service: # 单个服务写上服务名
 
 > 在微服务架构中，根据业务来拆分成一个个的服务，服务与服务之间可以通过 `RPC` 相互调用，在 Spring Cloud 中可以用 `RestTemplate + LoadBalanceClient` 和 `Feign` 来调用。为了保证其高可用，单个服务通常会集群部署。由于网络原因或者自身的原因，服务并不能保证 100% 可用，如果单个服务出现问题，调用这个服务就会出现线程阻塞，此时若有大量的请求涌入，`Servlet` 容器的线程资源会被消耗完毕，导致服务瘫痪。服务与服务之间的依赖性，故障会传播，会对整个微服务系统造成灾难性的严重后果，这就是服务故障的 **“雪崩”** 效应。
 
-阿里使用**[Sentinel](https://github.com/alibaba/Sentinel/wiki/介绍)**(👈🏻点击进入中文文档)来做熔断降级
+阿里使用**[Sentinel](https://github.com/alibaba/Sentinel/wiki/介绍)** (👈🏻点击进入中文文档)来做熔断降级
 
 ### 路由网关统一访问接口
 
