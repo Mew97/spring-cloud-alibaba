@@ -121,3 +121,18 @@ sca-provider-service: # 单个服务写上服务名
 #### Spring Cloud Gateway 工程流程
 
 ![](https://mew.oss-cn-shanghai.aliyuncs.com/img2/22e4eccf2cbe09332678c04b8de98ebe.jpg)
+
+客户端向 Spring Cloud Gateway 发出请求。然后在 Gateway Handler Mapping 中找到与请求相匹配的路由，将其发送到 Gateway Web Handler。Handler 再通过指定的过滤器链来将请求发送到我们实际的服务执行业务逻辑，然后返回。
+
+过滤器之间用虚线分开是因为过滤器可能会在发送代理请求之前（`pre`）或之后（`post`）执行业务逻辑。
+
+### 链路追踪
+
+- SkyWalking
+
+### 异步通信
+
+- RocketMQ
+- RibbitMQ
+- Kafka
+
