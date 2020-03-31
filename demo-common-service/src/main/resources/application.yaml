@@ -19,8 +19,14 @@ spring:
     nacos:
       discovery:
         server-addr: jd:8848
+        ip: 47.114.56.178
+
+#    inetutils:
+#      ignored-interfaces: eth.*
+#      preferred-networks: 47.114.56
 server:
-  port: 10104
+  port: 10105
+
 #mybatis-plus:
 #  mapper-locations: classpath:mapper/**/*.xml
 #  type-aliases-package: com.zhubome.sca.providerservice.entity

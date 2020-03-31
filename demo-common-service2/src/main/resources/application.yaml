@@ -18,7 +18,10 @@ feign:
 # 配置负载均衡，默通过ribbon实现，默认是轮询模式
 sca-provider-service: # 单个服务写上服务名
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 随机规则
+#   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule # 轮询(默认)
+#   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RetryRule # 重试
+#   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule # 响应时间权重
 
 # 多个服务不写服务名，但尝试未生效
 #ribbon:
