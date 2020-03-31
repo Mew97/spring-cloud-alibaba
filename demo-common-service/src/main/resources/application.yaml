@@ -19,7 +19,7 @@ spring:
     nacos:
       discovery:
         server-addr: jd:8848
-#        ip: 47.114.56.178
+        ip: 47.114.56.178
 
 #    inetutils:
 #      ignored-interfaces: eth.*
