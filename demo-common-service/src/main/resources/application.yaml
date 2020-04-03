@@ -26,5 +26,5 @@ spring:
 #      ignored-interfaces: eth.*
 #      preferred-networks:
 server:
-  port: 10104
+  port: 10105
 
