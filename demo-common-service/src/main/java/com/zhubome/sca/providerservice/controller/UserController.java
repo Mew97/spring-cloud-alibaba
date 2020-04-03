@@ -8,11 +8,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 /**
  * <p>
-`   1 *  前端控制器
+ * `   1 *  前端控制器
  * </p>
  *
  * @author mew
@@ -27,26 +26,26 @@ public class UserController {
     @Value("${server.port}")
     private String port;
 
-    @GetMapping("/get")
-    public List<User> getUser(){
-        return iUserService.list();
-    }
-
-    @GetMapping
+    @GetMapping("/")
     public String getPort() throws InterruptedException {
 //        TimeUnit.MILLISECONDS.sleep(200); //模拟数据处理时间
         return "被调用的服务端口：" + this.port;
     }
 
-    // 接受form或者url形式参数
+    @GetMapping("/get")
+    public List<User> getUser() {
+        return iUserService.list();
+    }
+
+    // 接受form或者url形式请求体
     @PostMapping("/form")
-    public User printUser2(User user){
+    public User printUser2(User user) {
         return user;
     }
 
-    // 接受json格式参数
+    // 接受json格式请求体
     @PostMapping("/json")
-    public User printUser1(@RequestBody User user){
+    public User printUser1(@RequestBody User user) {
         return user;
     }
 

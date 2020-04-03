@@ -21,8 +21,10 @@ spring:
         server-addr: jd:8848
 #        ip: 47.114.56.178
 
-#    inetutils:
+    inetutils:
+      use-only-site-local-interfaces: false
 #      ignored-interfaces: eth.*
 #      preferred-networks:
 server:
   port: 10104
+

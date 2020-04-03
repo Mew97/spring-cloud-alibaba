@@ -1,0 +1,22 @@
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: spring-cloud://jd
+  scan:
+    base-packages: com.zhubome.democommonservice4.service
+  cloud:
+    subscribed-services:
+
+
+spring:
+  application:
+    name: alibaba-dubbo-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: jd:8848
+
+# nacos默认情况下只能获取内网ip，可通过如下方式启动注册公网ip，前提设置hostname并且修改hosts文件映射到公网ip，
+# java -jar -Dspring.cloud.nacos.discovery.ip=`hostname -i` -jar xxx.jar
