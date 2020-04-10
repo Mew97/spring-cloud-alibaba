@@ -5,6 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+/**
+ * 普通服务提供者
+ */
 @SpringBootApplication(scanBasePackages = {"com.zhubome.sca"}) // 扫描所有项目bean
 @EnableDiscoveryClient
 @MapperScan("com.zhubome.sca.mybatis.mapper")

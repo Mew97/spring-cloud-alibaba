@@ -10,6 +10,7 @@
         <module>demo-common-service3</module>
         <module>demo-common-service4</module>
         <module>demo-dubbo-interface</module>
+        <module>test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

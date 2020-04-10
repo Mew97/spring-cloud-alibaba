@@ -11,6 +11,7 @@ import java.io.IOException;
 
 /**
  * {@link HelloService} provider demo
+ * 手动往Nacos上注册Dubbo服务
  */
 @EnableDubbo(scanBasePackages = "com.zhubome.democommonservice3.service")
 @PropertySource(value = "classpath:/provider-config.properties")

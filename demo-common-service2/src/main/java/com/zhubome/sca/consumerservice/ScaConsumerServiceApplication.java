@@ -5,6 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+
+/**
+ * Feign与Dubbo服务的消费者
+ */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients

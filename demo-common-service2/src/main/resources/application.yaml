@@ -5,6 +5,7 @@ spring:
     nacos:
       discovery:
         server-addr: jd:8848
+
 #  dubbo:
 #    application:
 #      name: dubbo-consummer
@@ -21,6 +22,8 @@ dubbo:
     address: spring-cloud://jd
   cloud:
     subscribed-services: alibaba-dubbo-server
+  consumer:
+    loadbalance: leastactive
 
 #feign:
 #  client:
